@@ -1,18 +1,19 @@
 # Portable Emergency Communication Node
 
 ## Overview
-A battery-powered LoRa mesh communication system designed to provide reliable communication and GPS-based location sharing during emergency and disaster situations where conventional cellular networks are unavailable.
+A battery-powered LoRa mesh communication system designed to provide reliable communication, GPS-based location sharing, and emergency coordination during disaster situations where conventional cellular networks are unavailable.
 
 ## Problem Statement
-Communication networks often fail during natural disasters, making coordination and location tracking of rescue teams difficult. This project provides a decentralized communication system using LoRa technology, enabling real-time communication and GPS location sharing without relying on GSM or internet connectivity.
+Communication networks often fail during natural disasters, making coordination, location tracking, and emergency response difficult. This project provides a decentralized communication system using LoRa technology, enabling real-time communication and GPS location sharing without relying on GSM or internet connectivity.
 
 ## Key Features
 - LoRa-based long-range mesh communication
 - GPS-based real-time location sharing
 - Rescue team-to-team communication
-- Battery-powered portable device
+- One-click SOS button for instant emergency alerts with live GPS location
+- Offline mobile application for communication and monitoring
 - Emergency message transmission
-- Mobile application interface
+- Battery-powered portable device
 - Operates without GSM or internet connectivity
 - Low-power operation for extended field use
 
@@ -22,6 +23,7 @@ Communication networks often fail during natural disasters, making coordination 
 - ESP32
 - LoRa Module
 - GPS Module
+- Push Button (SOS)
 - Battery Management System
 - Power Supply
 
@@ -34,24 +36,24 @@ Communication networks often fail during natural disasters, making coordination 
 
 ## System Workflow
 
-The workflow illustrates how each communication node acquires GPS coordinates, exchanges messages and location information with nearby rescue teams using LoRa communication, and displays the received information through the monitoring application.
+The workflow illustrates how each rescue node obtains its GPS location, exchanges messages and location information with nearby rescue teams through LoRa communication, sends SOS alerts with a single button press, and updates the offline mobile application with real-time information.
 
 ![System Workflow](workflow.png)
 
 ## System Flowchart
 
-The flowchart illustrates the complete operation of the system, including device initialization, GPS location acquisition, LoRa communication establishment, message transmission and reception, location sharing between rescue teams, and continuous monitoring.
+The flowchart illustrates the complete operation of the system, including system initialization, GPS location acquisition, LoRa network establishment, message transmission and reception, one-click SOS alert generation, GPS location sharing, and continuous communication between rescue teams through the offline mobile application.
 
 ![System Flowchart](flowchart.png)
 
 ## Results
 
-Successfully established reliable long-range communication between multiple rescue teams, enabling real-time message exchange and GPS-based location sharing without requiring cellular or internet connectivity.
+Successfully established reliable long-range communication between multiple rescue teams, enabling real-time messaging, GPS-based location sharing, one-click SOS alerts, and offline communication without requiring cellular or internet connectivity.
 
 ## Future Scope
 
 - Voice communication support
-- SOS emergency broadcasting
-- Interactive rescue coordination dashboard
-- Integration with drone-assisted search and rescue
+- Multimedia file sharing
+- Drone-assisted search and rescue integration
+- AI-based emergency response coordination
 - Large-scale LoRa mesh network deployment
